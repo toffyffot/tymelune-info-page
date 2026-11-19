@@ -1,15 +1,24 @@
 :root {
-  color-scheme: light;
-  --bg: #f7f4ef;
-  --card: #ffffff;
-  --text: #1d1b16;
-  --muted: #6b6458;
-  --accent: #1f5e5a;
-  --border: #e5dfd6;
-  --shadow: 0 12px 30px rgba(29, 27, 22, 0.12);
-  --radius: 20px;
-  font-family: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype",
-    "Book Antiqua", Palatino, serif;
+  color-scheme: light dark;
+  --background: #f6e6d7;
+  --paper: #faf3ea;
+  --text: #251811;
+  --accent: #552b19;
+  --muted: #705642;
+  --border: rgb(85 43 25 / 20%);
+  --heading-font: "Cormorant Garamond", "Iowan Old Style", Palatino, Georgia, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #17120f;
+    --paper: #20160f;
+    --text: #fff4e9;
+    --accent: #f6ca9f;
+    --muted: #d0bba8;
+    --border: rgb(246 202 159 / 24%);
+  }
 }
 
 * {
@@ -18,114 +27,97 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 55%);
+  padding: clamp(1rem, 4vw, 3rem) 1rem;
+  background: var(--background);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .page {
-  max-width: 840px;
-  margin: 48px auto 80px;
-  padding: 0 20px;
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  max-width: 52rem;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--paper);
   border: 1px solid var(--border);
+  border-radius: 1.25rem;
 }
 
-.hero {
-  padding: 48px 48px 24px;
-  border-bottom: 1px solid var(--border);
+.wordmark {
+  display: block;
+  width: 100%;
+  height: clamp(9.5rem, 20vw, 11rem);
+  object-fit: cover;
 }
 
-.hero-top {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.intro,
+section {
+  margin-inline: clamp(1.25rem, 7vw, 5.5rem);
+  padding-block: 1.75rem;
 }
 
-.app-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
-  border: 1px solid rgba(29, 27, 22, 0.1);
-  box-shadow: 0 8px 20px rgba(29, 27, 22, 0.18);
+.intro {
+  padding-top: clamp(2rem, 5vw, 3rem);
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
-  color: var(--accent);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  line-height: 1.15;
 }
 
 h1 {
-  margin: 0 0 12px;
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
 }
 
 .updated {
-  margin: 0;
+  margin: 0.45rem 0 1.4rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 section {
-  padding: 28px 48px;
-}
-
-section + section {
   border-top: 1px solid var(--border);
 }
 
 h2 {
-  margin: 0 0 12px;
-  font-size: 1.4rem;
+  margin-bottom: 0.85rem;
+  color: var(--accent);
+  font-size: 1.65rem;
 }
 
-p {
-  margin: 0 0 12px;
+p,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+p + p,
+dd + dt {
+  margin-top: 1rem;
+}
+
+dt {
+  font-weight: 600;
 }
 
 ul {
-  margin: 0;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
-li {
-  margin-bottom: 10px;
+li + li {
+  margin-top: 0.6rem;
 }
 
 a {
   color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(31, 94, 90, 0.35);
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
 }
 
-a:hover,
-a:focus {
-  border-bottom-color: var(--accent);
-}
-
-@media (max-width: 700px) {
-  .page {
-    margin: 24px 16px 48px;
-  }
-
-  .hero-top {
-    align-items: flex-start;
-  }
-
-  .app-icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
-  }
-
-  .hero,
-  section {
-    padding: 28px 24px;
-  }
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
