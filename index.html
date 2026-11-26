@@ -3,63 +3,91 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy — Tymelune</title>
-    <meta name="description" content="How Tymelune stores and syncs your countdowns, what others can see when you share one, and how to contact support." />
+    <title>Tymelune — Countdowns &amp; Widgets</title>
+    <meta name="description" content="Count down to birthdays, trips, and anniversaries with personal reminders, shared photo journals, and widgets. Download Tymelune for iPhone, iPad, and Apple Watch." />
     <link rel="icon" type="image/png" href="app-icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page">
-      <header>
-        <img class="wordmark" src="tymelune-header.jpg" width="1600" height="686" alt="Tymelune" />
-        <div class="intro">
-          <h1>Privacy Policy</h1>
-          <p class="updated">Last updated <time datetime="2026-11-19">November 19, 2026</time></p>
-          <p>Tymelune is designed to keep your data private. We do not collect or sell personal information.</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell masthead">
+        <a class="brand" href="index.html" aria-label="Tymelune home">
+          <img src="app-icon.png" alt="" width="42" height="42" />
+          Tymelune
+        </a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-landscape" src="assets/kyoto.webp" width="1450" height="966" alt="" fetchpriority="high" />
+        <div class="hero-copy">
+          <h1 id="hero-title">Count down to<br /><em>what matters.</em></h1>
+          <p>Give birthdays, trips, and anniversaries their own cover photos and reminders. Count down together with friends and family.</p>
+          <div class="download">
+            <a class="store-badge" href="https://apps.apple.com/us/app/tymelune-countdowns-widgets/id6758598164">
+              <img src="assets/app-store-badge.svg" width="156" height="52" alt="Download Tymelune on the App Store" />
+            </a>
+            <a class="scan-link" href="https://apps.apple.com/us/app/tymelune-countdowns-widgets/id6758598164" aria-label="Open Tymelune on the App Store">
+              <img src="assets/app-store-qr.png" width="90" height="90" alt="QR code for the Tymelune App Store listing" />
+            </a>
+          </div>
+          <p class="platforms">For iPhone, iPad &amp; Apple Watch</p>
         </div>
-      </header>
-
-      <section>
-        <h2>Data We Collect</h2>
-        <dl>
-          <dt>Local app data</dt>
-          <dd>Tymelune stores countdown details on your device, including titles, dates, tags, colors, notes, and any cover photos or locations you add.</dd>
-          <dt>iCloud</dt>
-          <dd>Tymelune stores your countdowns in your private iCloud account and syncs them automatically across devices signed in to that account. When iCloud is unavailable, Tymelune keeps a local copy on your device.</dd>
-          <dt>Purchases</dt>
-          <dd>Apple handles subscriptions through StoreKit. We do not receive your payment details.</dd>
-        </dl>
+        <div class="hero-device">
+          <img src="assets/countdown-detail.webp" width="524" height="1126" alt="Tymelune showing nine days until a Kyoto getaway, with a cover photo, notes, and a shared journal." />
+        </div>
       </section>
 
-      <section>
-        <h2>Notifications</h2>
-        <p>Your reminder settings sync with your countdowns. If you enable notifications, Tymelune schedules reminders on your device. You may also receive alerts for invitations and activity on shared countdowns.</p>
+      <section class="features" aria-labelledby="features-title">
+        <h2 id="features-title">Inside Tymelune</h2>
+        <div class="feature-grid">
+          <article>
+            <div class="feature-art reminder-art" aria-hidden="true">
+              <div class="reminder">
+                <img src="app-icon.png" width="40" height="40" alt="" />
+                <div><span>Birthday dinner</span><strong>Pick up the cake</strong><small>Tomorrow at 4 PM</small></div>
+              </div>
+            </div>
+            <h3>Personal reminders</h3>
+            <p>Write a reminder in your own words and choose when it arrives. Set birthdays and anniversaries to repeat each year.</p>
+          </article>
+          <article>
+            <div class="feature-art journal-art" aria-hidden="true">
+              <img class="print print-walk" src="assets/canal-walk.webp" width="700" height="466" alt="" loading="lazy" />
+              <img class="print print-tea" src="assets/tea-house.webp" width="450" height="300" alt="" loading="lazy" />
+            </div>
+            <h3>Shared photo journals</h3>
+            <p>Invite friends and family to a countdown. Everyone can add photos and notes to the same journal, from the first plans to the trip home.</p>
+          </article>
+          <article>
+            <div class="feature-art widget-art">
+              <img src="assets/dotfield-widget.webp" width="650" height="304" alt="A Dotfield widget showing the days left until a Kyoto trip." loading="lazy" />
+            </div>
+            <h3>Home &amp; Lock Screen widgets</h3>
+            <p>With Tymelune Pro, pin upcoming dates to your screen or watch a Dotfield grid fill in as the day gets closer.</p>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Analytics &amp; Tracking</h2>
-        <p>We do not use third-party analytics or tracking tools.</p>
-      </section>
-
-      <section>
-        <h2>Data Sharing</h2>
-        <p>When you share a countdown, invitees can preview it before joining. People who accept can see its details, including any notes, cover photo, or location you added. They can also see journal entries and photos posted to that countdown.</p>
-        <p>Owners can see contributors’ names when iCloud provides them. Names can also appear alongside journal entries. Each contributor’s personal reminders, Live Activity settings, and tag selections are stored in their private iCloud account.</p>
-      </section>
-
-      <section>
-        <h2>Your Choices</h2>
-        <ul>
-          <li>You can stop sharing a countdown you own or remove a contributor. Removing someone ends their access. Their journal entries stay in the countdown.</li>
-          <li>You can decline an invitation or leave a countdown someone has shared with you.</li>
-          <li>You can delete your countdowns at any time. Uninstalling Tymelune removes local app data from your device.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Support &amp; Contact</h2>
-        <p>For app support or questions about your privacy, email <a href="mailto:krystoffer@tymelune.com">krystoffer@tymelune.com</a>.</p>
+      <section class="device-sync" aria-labelledby="sync-title">
+        <h2 id="sync-title">Across your devices</h2>
+        <p>Your countdowns sync through iCloud. Plan a trip on iPad, check the date on Apple Watch, or follow the final hours with a Live Activity on a supported iPhone.</p>
       </section>
     </main>
+
+    <footer class="shell site-footer">
+      <a class="footer-brand" href="index.html">Tymelune</a>
+      <nav aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </footer>
   </body>
 </html>
