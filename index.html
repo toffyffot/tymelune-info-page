@@ -3,10 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tymelune — Countdowns &amp; Widgets</title>
-    <meta name="description" content="Count down to birthdays, trips, and anniversaries with personal reminders, shared photo journals, and widgets. Download Tymelune for iPhone, iPad, and Apple Watch." />
+    <title>Tymelune — Countdown App for iPhone, iPad &amp; Apple Watch</title>
+    <meta name="description" content="Count down to birthdays, trips, and anniversaries with Tymelune. Set reminders, share a photo journal, and add countdown widgets to your Home or Lock Screen." />
+    <link rel="canonical" href="https://toffyffot.github.io/tymelune-info-page/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tymelune" />
+    <meta property="og:title" content="Tymelune — Countdown App for iPhone, iPad &amp; Apple Watch" />
+    <meta property="og:description" content="Count down to birthdays, trips, and anniversaries with Tymelune. Set reminders, share a photo journal, and add countdown widgets to your Home or Lock Screen." />
+    <meta property="og:url" content="https://toffyffot.github.io/tymelune-info-page/" />
+    <meta property="og:image" content="https://toffyffot.github.io/tymelune-info-page/tymelune-header.jpg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="686" />
+    <meta property="og:image:alt" content="Tymelune wordmark with a gold crescent and hourglass" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="app-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Tymelune",
+        "url": "https://toffyffot.github.io/tymelune-info-page/",
+        "description": "A countdown app for birthdays, trips, and anniversaries with personal reminders, shared photo journals, and optional Pro widgets.",
+        "applicationCategory": "Productivity",
+        "operatingSystem": ["iOS", "iPadOS", "watchOS"],
+        "image": "https://toffyffot.github.io/tymelune-info-page/app-icon.png",
+        "screenshot": "https://toffyffot.github.io/tymelune-info-page/assets/countdown-detail.webp",
+        "downloadUrl": "https://apps.apple.com/us/app/tymelune-countdowns-widgets/id6758598164",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -26,10 +56,13 @@
 
     <main id="main" class="shell">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-landscape" src="assets/kyoto.webp" width="1450" height="966" alt="" fetchpriority="high" />
+        <img class="hero-landscape" src="assets/kyoto.webp"
+             srcset="assets/kyoto-800.webp 800w, assets/kyoto.webp 1450w"
+             sizes="(max-width: 86rem) 91vw, 78rem"
+             width="1450" height="966" alt="" fetchpriority="high" />
         <div class="hero-copy">
           <h1 id="hero-title">Count down to<br /><em>what matters.</em></h1>
-          <p>Give birthdays, trips, and anniversaries their own cover photos and reminders. Count down together with friends and family.</p>
+          <p>Tymelune is a countdown app for birthdays, trips, and anniversaries. Give each date a cover photo, set a reminder, and share the countdown with friends and family.</p>
           <div class="download">
             <a class="store-badge" href="https://apps.apple.com/us/app/tymelune-countdowns-widgets/id6758598164">
               <img src="assets/app-store-badge.svg" width="156" height="52" alt="Download Tymelune on the App Store" />
@@ -38,7 +71,7 @@
               <img src="assets/app-store-qr.png" width="90" height="90" alt="QR code for the Tymelune App Store listing" />
             </a>
           </div>
-          <p class="platforms">For iPhone, iPad &amp; Apple Watch</p>
+          <p class="platforms">Free to download on iPhone, iPad &amp; Apple Watch.</p>
         </div>
         <div class="hero-device">
           <img src="assets/countdown-detail.webp" width="524" height="1126" alt="Tymelune showing nine days until a Kyoto getaway, with a cover photo, notes, and a shared journal." />
